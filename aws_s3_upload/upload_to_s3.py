@@ -11,6 +11,6 @@ s3 = boto3.client('s3')
 # Upload the file
 try:
     s3.upload_file(file_name, bucket_name, object_name)
-    print(f"✅ Uploaded {file_name} to {bucket_name}/{object_name}")
+    print(f"Uploaded {file_name} to {bucket_name}/{object_name}")
 except Exception as e:
-    print(f"❌ Upload failed: {e}")
+    print(f"Upload failed: {e}")
